@@ -1,0 +1,12 @@
+# - Config file for the DFINDER package
+#  It defines the following variables
+#  DFINDER_EXECUTABLE   - the executable
+
+# Compute paths
+get_filename_component(DFINDER_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("${DFINDER_CMAKE_DIR}/DFINDERTargets.cmake")
+
+# These are IMPORTED targets created by DFINDERTargets.cmake
+set(DFINDER_EXECUTABLE ${PROJECT_NAME})

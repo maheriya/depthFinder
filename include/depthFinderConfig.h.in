@@ -1,0 +1,6 @@
+// The Configured options and settings for DFINDER
+#define DFINDER_VERSION   @DFINDER_VERSION@
+
+// DFINDER runtime data directory
+#define DFINDER_DATA_DIR  "@DFINDER_DATA_DIR@"
+
