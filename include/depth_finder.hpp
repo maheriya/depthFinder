@@ -6,27 +6,13 @@
 #ifndef __DEPTH_FINDER_H__
 #define __DEPTH_FINDER_H__
 
-#include "depthFinderConfig.h"  // From the build directory
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdint.h>
-#include <sys/time.h>
-
+#include "common.hpp"
 #include "opencv2/calib3d.hpp"
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/highgui.hpp"
 #include "opencv2/imgproc.hpp"
 
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <iostream>
-#include <iterator>
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-
+#include "depthgen.hpp"
 
 //--template<typename Duration = std::chrono::milliseconds>
 //--struct measure {

@@ -34,7 +34,7 @@ file(GLOB SOURCES_CPP "src/*.cpp")
 file(GLOB SOURCES_C   "src/*.c")
 
 # Find OpenCV
-find_package( OpenCV 3.4 REQUIRED ) # not requiring EXACT sub-version
+find_package( OpenCV 3.4.2 EXACT REQUIRED ) # not requiring EXACT sub-version
 set(CFLGS  "-DOPENCV")
 
 # Add Executable
