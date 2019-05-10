@@ -39,9 +39,9 @@ set(CFLGS  "-DOPENCV")
 
 # Add Executable
 if (EN_CUDA)  ## CUDA is required
-  CUDA_ADD_EXECUTABLE(depth_finder ${SOURCES_CPP} ${SOURCES_C})
+  CUDA_ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCES_CPP} ${SOURCES_C})
 else()
-  ADD_EXECUTABLE(depth_finder ${SOURCES_CPP} ${SOURCES_C})
+  ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCES_CPP} ${SOURCES_C})
 endif()
 
 

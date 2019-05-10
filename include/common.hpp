@@ -52,12 +52,10 @@
 
 //-////////////////////////////////////////////////////////////////////////////
 // Disparity calculation parameters
-#define SAD_BLOCK_SIZE     41
-#define NUM_DISPARITIES    192
+#define SAD_BLOCK_SIZE     15
+#define NUM_DISPARITIES    144
 #define MIN_DISP          -64
-//#define MAX_16S_DISP       1536     // 16*NUM_DISPARITIES (l->r disp of 96)
-//#define SCALE_16S_TO_8U    (0.1600) // 256 / (16 * (NUM_DISPARITIES - MIN_DISP))
-#define SCALE_16S_TO_8U    (0.100) // 256 / (16 * (NUM_DISPARITIES - MIN_DISP))
+#define SCALE_16S_TO_8U    (0.0714) // 256 / (16 * (NUM_DISPARITIES - MIN_DISP))
 // Threshold under which to ignore disparity. Not used.
 #define MIN_DISP_THRESH    4
 

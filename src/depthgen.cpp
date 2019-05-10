@@ -9,8 +9,8 @@
 #define EN_RECTIFICATION 1
 
 static const double ms_mult            = (1000/getTickFrequency());
-static const string intrinsic_filename = DFINDER_DATA_DIR "/cal1/intrinsics.yml";
-static const string extrinsic_filename = DFINDER_DATA_DIR "/cal1/extrinsics.yml";
+static const string intrinsic_filename = DFINDER_DATA_DIR "/cal4/intrinsics.yml";
+static const string extrinsic_filename = DFINDER_DATA_DIR "/cal4/extrinsics.yml";
 
 int DepthGen::init() {
     width      = IMG_WIDTH;
